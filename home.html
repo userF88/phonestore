@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Style -->
+    <link href="variables.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link href="global.css" rel="stylesheet">   
+    <link href="animations.css" rel="stylesheet">
+    <link href="category.css" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="shoppingCart.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+
+    <title>Home - Phone Store</title>
+</head>
+<body>
+    <!-- ===== Header ===== -->
+    <header>
+        <div class="header-container">
+            <div class="grid-row">
+                <div class="col-md-12 col-sm-12 col-xs-12 col-xxs-12 d-none d-md-inf-flex header-collapse">
+                    <div class="logo">
+                        <span class="logo-left-part">Store</span>
+                        <span class="logo-right-part">Phone</span>
+                    </div>
+                    <div class="collapse" onclick="showNavbar()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 d-md-inf-none">
+                    <div class="logo">
+                        <span class="logo-left-part">Store</span>
+                        <span class="logo-right-part">Phone</span>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 col-xxs-12 d-md-inf-none">
+                    <div class="navbar">
+                        <nav>
+                            <ul class="navbar-elements">
+                                <li class="navbar-elemnt">
+                                    <a href="#" class="navbar-link">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="navbar-elemnt">
+                                    <a href="#" class="navbar-link">
+                                        Boutique
+                                    </a>
+                                </li>
+                                <li class="navbar-elemnt">
+                                    <a href="#" class="navbar-link">
+                                        Shop Detail
+                                    </a>
+                                </li>
+                                <li class="navbar-elemnt">
+                                    <a href="#" class="navbar-link">
+                                        Panier
+                                    </a>
+                                </li>
+                                <li class="navbar-elemnt">
+                                    <a href="#" class="navbar-link">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12 col-xxs-12">
+                    <div class="header-actions">
+                        <a class="heart-action header-action" href="#">
+                            <div class="action-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="action-number">
+                                0
+                            </div>
+                        </a>
+                        <a class="shopping-cart-action header-action" onclick="showShoppingCart()">
+                            <div class="action-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="action-number">
+                                0                                    
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===== End Header ===== -->
+    <main>
+        <!-- ===== Hero ===== -->
+        <section id="hero">
+            <div class="container hero-container">
+                <div class="grid-row hero-presentation">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xxs-12 hero-cart">
+                        <div class="hero-element">
+                            <div class="hero-element-image">
+                                <img src="carousel-1.jpg" alt="Carousel-1" class="hero-element-img full-img" />
+                            </div>
+                            <div class="hero-element-details">
+                                <div class="hero-element-description">
+                                    <h1>
+                                        iPad S12+ Pro.
+                                    </h1>
+                                    <p class="hero-element-description-paragraph">
+                                        From $999.00 or $41.62/mo. for 24 mo. 
+                                    </p>
+                                </div>
+                                <div class="hero-element-actions">
+                                    <div class="hero-element-action hero-element-call-to-action hero-element-primary-action">
+                                        <a href="#" class="hero-element-act hero-element-cta hero-element-primary-act">
+                                            Buy now
+                                        </a>
+                                    </div>
+                                    <div class="hero-element-action hero-element-secondary-action">
+                                        <a href="#" class="hero-element-act hero-element-secondary-act">
+                                            Show more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xxs-12 hero-cart">
+                        <div class="grid-row offers">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 offer-cart">
+                                <div class="offer hero-element">
+                                    <div class="offer-image hero-element-image">
+                                        <img src="pub-1.jpg" class="hero-element-img offer-img full-img" />
+                                    </div>
+                                    <div class="offer-details hero-element-details">
+                                        <div class="offer-description hero-element-description">
+                                            <h1>
+                                                Laptop Max
+                                            </h1>
+                                            <p>
+                                                From $1699.00 or $64.62/mo
+                                            </p>
+                                        </div>
+                                        <div class="offer-action">
+                                            <a href="#" class="hero-element-act hero-element-cta hero-element-primary-act">
+                                                Buy now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 offer-cart">
+                                <div class="offer hero-element">
+                                    <div class="offer-image hero-element-image">
+                                        <img src="pub-2.jpg" class="hero-element-img offer-img full-img" />
+                                    </div>
+                                    <div class="offer-details hero-element-details">
+                                        <div class="offer-description hero-element-description">
+                                            <h1>
+                                                Laptop Max
+                                            </h1>
+                                            <p>
+                                                From $1699.00 or $64.62/mo
+                                            </p>
+                                        </div>
+                                        <div class="offer-action">
+                                            <a href="#" class="hero-element-act hero-element-cta hero-element-primary-act">
+                                                Buy now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 offer-cart">
+                                <div class="offer hero-element">
+                                    <div class="offer-image hero-element-image">
+                                        <img src="pub-3.jpg" class="hero-element-img offer-img full-img" />
+                                    </div>
+                                    <div class="offer-details hero-element-details">
+                                        <div class="offer-description hero-element-description">
+                                            <h1>
+                                                Laptop Max
+                                            </h1>
+                                            <p>
+                                                From $1699.00 or $64.62/mo
+                                            </p>
+                                        </div>
+                                        <div class="offer-action">
+                                            <a href="#" class="hero-element-act hero-element-cta hero-element-primary-act">
+                                                Buy now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 offer-cart">
+                                <div class="offer hero-element">
+                                    <div class="offer-image hero-element-image">
+                                        <img src="pub-4.jpg" class="hero-element-img offer-img full-img" />
+                                    </div>
+                                    <div class="offer-details hero-element-details">
+                                        <div class="offer-description hero-element-description">
+                                            <h1>
+                                                Laptop Max
+                                            </h1>
+                                            <p>
+                                                From $1699.00 or $64.62/mo
+                                            </p>
+                                        </div>
+                                        <div class="offer-action">
+                                            <a href="#" class="hero-element-act hero-element-cta hero-element-primary-act">
+                                                Buy now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Hero ===== -->
+        <!-- ===== Categories ===== -->
+        <section id="categories">
+            <div class="container categories-container">
+                <div class="section-title categories-title">
+                    <h2>
+                        Categories
+                    </h2>
+                </div>
+                <div class="grid-row categories-presentation">
+                    <!-- From javascript -->
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Categories ===== -->
+        <!-- ===== Recent products ===== -->
+        <section id="recent-products">
+            <div class="container recent-products-container">
+                <div class="section-title recent-products-title">
+                    <h2>
+                        Recent products
+                    </h2>
+                </div>
+                <div class="grid-row recent-products-presentation">
+                    <!-- From js -->
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Recent products ===== -->
+        <!-- ===== Offers & ad ===== -->
+        <section id="offers-ad">
+            <div class="container offers-ad-container">
+                <div class="grid-row offers-ad-presentation">
+                    <!-- From js -->
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Offers & ad ===== -->
+        <!-- ===== Marks ===== -->
+        <section id="marks">
+            <div class="container marks-container">
+                <div class="section-title marks-title">
+                    <h2>
+                        Sponsor
+                    </h2>
+                </div>
+                <div class="marks-presentation carousel marks-carousel">
+                    <!-- from js -->
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Marks ===== -->
+        <section id="shopping-cart-content">
+            <div class="shopping-cart-content-container">
+                <div class="shopping-cart-content-presentation">
+                    <div class="small-shopping-cart-product">
+                        <div class="small-shopping-cart-product-image">
+                            <img src="product-1.jpg" class="small-shopping-cart-product-img" />
+                        </div>
+                        <div class="small-shopping-cart-product-description">
+                            <h2>
+                                Product - 1
+                            </h2>
+                            <h3>
+                                24
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="small-shopping-cart-product">
+                        <div class="small-shopping-cart-product-image">
+                            <img src="product-2.jpg" class="small-shopping-cart-product-img" />
+                        </div>
+                        <div class="small-shopping-cart-product-description">
+                            <h2>
+                                Product - 2
+                            </h2>
+                            <h3>
+                                36
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="small-shopping-cart-product">
+                        <div class="small-shopping-cart-validations">
+                            <a href="#" class="validation-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <p> <a href="index.html">index</a>
+    <a href="productDetails.html"> product</a></p>
+    <script src="global.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

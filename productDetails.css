@@ -1,0 +1,131 @@
+/* ====== overview =======  */
+#product-details__overview{
+    padding-top: 4.5rem;
+}
+
+.product-details__overview-presentation {
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.product-details__overview-selected-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-details__overview-selected-img {
+    width: 80%;
+}
+
+
+.product-details__product-carousel-img{
+    opacity: .5;
+    transition: all .7s ease-in-out;
+}
+
+.product-details__product-carousel-img.active-carousel-img{
+    opacity: 1;
+    border: 1px dashed #000;
+}
+
+.carousel-element.product-details__overview-image-carousel-element{
+    width: calc((100% - (40px)) /4); 
+}
+
+.product-details__overview-description h1{
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
+}
+
+.product-details__overview-description h3{
+    font-family: var(--secondary-font);
+    font-size: clamp(.8rem, 2vw + 1rem, 2.5);
+    font-weight: 500;
+}
+
+.product-details__overview-description p{
+    font-family: var(--secondary-font);
+    font-size: .9rem;
+}
+
+.product-details__overview-description-reviews{
+    color: yellow;
+}
+
+.form-groupe-input {
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    padding: 0 15px;
+    border-radius: 4px;
+}
+
+input.form-groupe-quantity-input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #eee;
+    padding: 12px 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.buy-act {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.15px;
+    width: 100%;
+    display: flex;
+    background-color: #2449ce;
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+    justify-content: center;
+    border-radius: 4px;
+    gap: 10px;
+    transition: all .5s ease-in-out;
+}
+
+/* Aniumation */
+
+.buy-act:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.form-groupe-input i:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+
+/* ====== */
+
+.product-details__more-details-tabs {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+}
+
+.product-details__more-details-tab-nav-item{
+    padding: 10px;
+    font-family: var(--secondary-font);
+    border-radius: 7px;
+    transition: all .7s ease-in-out;
+}
+
+.product-details__more-details-tab-nav-item.active, .product-details__more-details-tab-nav-item:hover{
+    background-color: #555;
+    border-radius: 5px;
+    color: #fff;
+}
+
+

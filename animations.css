@@ -1,0 +1,43 @@
+.fade-up{
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+.fade-left{
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+.fade-left.visible{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fade-right{
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+.fade-right.visible{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fade-up.visible{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.zoom-out{
+    transform: scale(0.3);
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+.zoom-out.visible{
+    transform: scale(1);
+    opacity: 1;
+}

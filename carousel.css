@@ -1,0 +1,27 @@
+.carousel {
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel-element{
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel.dragging .carousel-element{
+    cursor: grab;
+}
